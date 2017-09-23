@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "error_login_no_name"> Erreur de connexion - aucun nom </string>
+    <string name = "error_login_no_room_id"> Erreur de connexion - aucun ID de pièce </string>
+    <string name = "error_login_no_user_id"> Erreur de connexion - aucun identifiant utilisateur</string>
+    <string name = "error_user_list_no_room_id"> Erreur de liste d’utilisateurs - pas d’identifiant de salle </string>
+    <string name = "error_message_list_no_room_id"> Erreur de liste de messages - pas d’identifiant de salle </string>
+    <string name = "error_message_list_no_last_message_id"> Erreur de liste de messages - pas d’identifiant de dernier message </string>
+    <string name = "error_send_message_no_file"> Envoyer un message d’erreur - pas de fichier </string>
+    <string name = "error_send_message_no_room_id"> Erreur de message d’envoi - aucun identifiant de pièce </string>
+    <string name = "error_send_message_no_user_id"> Erreur de message d’envoi - pas d’identifiant utilisateur </string>
+    <string name = "error_send_message_no_type"> Erreur de message d’envoi - aucun type </string>
+    <string name = "error_file_upload_no_file"> Erreur de chargement - aucun fichier </string>
+    <string name = "error_socket_unknown_error"> Erreur de socket - erreur inconnue </string>
+    <string name = "error_socket_delete_message_no_user_id"> Erreur de message de suppression de socket - pas d’identifiant d’utilisateur </string>
+    <string name = "error_socket_delete_message_no_message_id"> Erreur de message de suppression de socket - pas d’id de message </string>
+    <string name = "error_socket_send_message_no_room_id"> Erreur de message d’envoi de socket - pas d’identifiant de salle </string>
+    <string name = "error_socket_send_message_no_user_id"> Erreur de message d’envoi de socket - pas d’identifiant d’utilisateur </string>
+    <string name = "error_socket_send_message_no_type"> Erreur de message d’envoi de socket - aucun type </string>
+    <string name = "error_socket_send_message_no_message"> Erreur de message d’envoi de socket - aucun message </string>
+    <string name = "error_socket_send_message_no_location"> Erreur de message d’envoi de socket - pas d’emplacement </string>
+    <string name = "error_socket_send_message_fail"> Erreur de message d’envoi de socket - failed </string>
+    <string name = "error_socket_typing_no_user_id"> Erreur de saisie de type - aucun identifiant utilisateur </string>
+    <string name = "error_socket_typing_no_room_id"> Erreur de saisie - pas d’identifiant de pièce </string>
+    <string name = "error_socket_typing_no_type"> Erreur de saisie - aucun type </string>
+    <string name = "error_socket_typing_failed"> Erreur de frappe de socket - Echec </string>
+    <string name = "error_socket_login_no_user_id"> Erreur de connexion au socket - pas d’identifiant utilisateur </string>
+    <string name = "error_socket_login_no_room_id"> Erreur de connexion au socket - pas d’identifiant de salle </string>
+    <string name = "error_connection_error"> Erreur inconnue - erreur de connexion </string>
+</resources>
