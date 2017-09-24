@@ -176,6 +176,13 @@ public class ChatActivity extends BaseActivity {
         context.startActivity(intent);
     }
 
+    public static void startChatActivityWithConfigAndAnim(Context context, User user, Config config, Bundle bundle) {
+        Intent intent = new Intent(context, ChatActivity.class);
+        intent.putExtra(Const.Extras.USER, user);
+        intent.putExtra(Const.Extras.CONFIG, config);
+        context.startActivity(intent,bundle);
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

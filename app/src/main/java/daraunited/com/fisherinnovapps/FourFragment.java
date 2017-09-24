@@ -1,5 +1,6 @@
 package daraunited.com.fisherinnovapps;
 
+import android.app.ActivityOptions;
 import android.app.TabActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,7 +25,6 @@ import com.clover_studio.spikachatmodule.models.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
 public class FourFragment extends Fragment{
     private PrefManager prefManager;
     private String Userdata[] = new String[10];
@@ -48,6 +48,7 @@ public class FourFragment extends Fragment{
         //getUserSettingBystring();
         //StartNews();
         View v = inflater.inflate(R.layout.fragment_one_tips, container, false);
+       ImageView img = (ImageView) v.findViewById(R.id.imageView);
         //ASSIGN IMAGE VIEW FONCTION
         return v;
     }
@@ -95,6 +96,7 @@ public class FourFragment extends Fragment{
         public void spikahelp (){
             FirebaseAuth mAuth = FirebaseAuth.getInstance();
             FirebaseUser currentUser = mAuth.getCurrentUser();
+            getUserSettingBystring();
             User user = new User();
             user.roomID = Userdata[8];
             user.userID = Userdata[5];
@@ -103,6 +105,14 @@ public class FourFragment extends Fragment{
             Config config = new Config();
             config.apiBaseUrl = "http://archeos.ovh:3320/spika/v1/";
             config.socketUrl = "http://archeos.ovh:3320/spika";
-            ChatActivity.startChatActivityWithConfig(getContext(), user, config);
+            Bundle bundle = ActivityOptions.makeCustomAnimation(getContext(),R.anim.push_left_in, R.anim.push_left_out).toBundle();
+            ChatActivity.startChatActivityWithConfigAndAnim(getContext(), user, config, bundle);
+            TabLayout myHost = (TabLayout) fingerprint.mainActivity.findViewById(R.id.tabs);
+            myHost.setScrollPosition(1,0f,true);
+            myHost.getTabAt(1).select();
+
         }
+    public static void startCh() {
+
+    }
 }
